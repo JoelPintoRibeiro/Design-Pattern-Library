@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternLibrary
+namespace AdapterProblem.Chargeurs
 {
-    class Program
+    public class SamsungChargeur
     {
-        static void Main(string[] args)
+        public void RechargeIphone()
         {
+
+            Console.Write("L'iphone recharge");
         }
     }
 }

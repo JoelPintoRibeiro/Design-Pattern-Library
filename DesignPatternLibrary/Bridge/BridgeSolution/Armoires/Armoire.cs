@@ -9,11 +9,13 @@ namespace BridgeProblem
 {
     public abstract class Armoire
     {
+        protected readonly IConstructeur contructeur;
         protected readonly ITaille taille;
         abstract public void OuvrirPorte();
-        public Armoire(ITaille taille)
+        public Armoire(ITaille taille,IConstructeur contructeur)
         {
             this.taille = taille;
+            this.contructeur = contructeur;
         }
     }
 }

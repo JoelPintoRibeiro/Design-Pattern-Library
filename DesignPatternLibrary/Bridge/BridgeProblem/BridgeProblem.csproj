@@ -51,6 +51,7 @@
     <Compile Include="Armoires\ArmoireCastorama.cs" />
     <Compile Include="Armoires\ArmoireIkea.cs" />
     <Compile Include="Armoires\IArmoire.cs" />
+    <Compile Include="Armoires\ITaille.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,15 +7,15 @@ using BridgeProblem.Taille;
 
 namespace BridgeProblem
 {
-    public class ArmoireIkea : Armoire
+    public class ArmoireConcrete : Armoire
     {
-        public ArmoireIkea(ITaille taille) : base(taille)
+        public ArmoireConcrete(ITaille taille,IConstructeur constructeur) : base(taille,constructeur)
         {
         }
 
         public override void OuvrirPorte()
         {
-            Console.WriteLine("L'amoire de taille : "+taille.DonneTaille()+ " Ikea s'ouvre");
+            Console.WriteLine("L'amoire de taille : "+taille.DonneTaille()+ " de la marque: " + this.contructeur.Nom +" s'ouvre");
           
         }
     }

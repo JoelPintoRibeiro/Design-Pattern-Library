@@ -8,18 +8,13 @@ namespace BridgeProblem
 {
     public class ArmoireIkea : IArmoire
     {
-        public ITaille taille
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
+        public ArmoireIkea(ITaille taille)
+        {
+            this.Taille = taille;
         }
+
+        public ITaille Taille { get; private set; }
 
         public void OuvrirPorte()
         {

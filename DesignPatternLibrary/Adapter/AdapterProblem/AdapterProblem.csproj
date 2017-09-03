@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D8A3AA7-F2E6-4951-B1C2-3FC10FB43336}</ProjectGuid>
+    <ProjectGuid>{59B2D098-5FA6-4918-A24F-C3E3B0B71010}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BridgeProblem</RootNamespace>
-    <AssemblyName>BridgeProblem</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>AdapterProblem</RootNamespace>
+    <AssemblyName>AdapterProblem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,25 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Armoires\ArmoireCastorama.cs" />
-    <Compile Include="Armoires\ArmoireIkea.cs" />
-    <Compile Include="Armoires\Armoire.cs" />
+    <Compile Include="Adapteurs\IphoneAdapteur.cs" />
+    <Compile Include="Chargeurs\IphoneChargeur.cs" />
+    <Compile Include="Chargeurs\SamsungChargeur.cs" />
+    <Compile Include="Nouveau Chargeur\IChargeurUniverselle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Taille\ITaille.cs" />
-    <Compile Include="Taille\EnormeCapacite.cs" />
-    <Compile Include="Taille\GrandeCapacite.cs" />
-    <Compile Include="Taille\PetiteCapacite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

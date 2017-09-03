@@ -1,4 +1,5 @@
 ﻿using BridgeProblem.Taille;
+using BridgeSolution.Constructeur;
 using System;
 
 namespace BridgeProblem
@@ -14,14 +15,15 @@ namespace BridgeProblem
         {
 
             var PetiteTaille = new PetiteCapacite();
+            var casto = new Castorama();
+            casto.Nom = "Castorama";
+            var monArmoire = new ArmoireConcrete(PetiteTaille,casto);
 
-            var monArmoireIkea = new ArmoireIkea(PetiteTaille);
+            monArmoire.OuvrirPorte();
 
-            monArmoireIkea.OuvrirPorte();
-
-            var GrandeTaille = new GrandeCapacite();
-            var maGrandeArmoireCasto = new ArmoireCastorama(GrandeTaille);
-            maGrandeArmoireCasto.OuvrirPorte();
+            //var GrandeTaille = new GrandeCapacite();
+            //var maGrandeArmoireCasto = new ArmoireCastorama(GrandeTaille);
+            //maGrandeArmoireCasto.OuvrirPorte();
 
             Console.ReadLine();
         }

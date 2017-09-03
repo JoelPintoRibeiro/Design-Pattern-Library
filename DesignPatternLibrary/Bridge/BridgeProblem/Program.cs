@@ -12,12 +12,12 @@ namespace BridgeProblem
         //ceci pour eviter dans l'avenir de se retrouver avec une multiplication inutile de classe...
         private static void Main(string[] args)
         {
-            var monArmoireIka = new ArmoireIkea();
+            //var monArmoireIka = new ArmoireIkea(new petiteTaille());
 
-            monArmoireIka.OuvrirPorte();
+            //monArmoireIka.OuvrirPorte();
 
-            var maGrandeArmoireCasto = new ArmoireCastoramaGrande();
-            maGrandeArmoireCasto.OuvrirPorte();
+            //var maGrandeArmoireCasto = new ArmoireCastoramaGrande();
+            //maGrandeArmoireCasto.OuvrirPorte();
 
             Console.ReadLine();
         }
