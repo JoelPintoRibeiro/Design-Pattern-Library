@@ -42,10 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapteurs\IphoneAdapteur.cs" />
     <Compile Include="Chargeurs\IphoneChargeur.cs" />
     <Compile Include="Chargeurs\SamsungChargeur.cs" />
-    <Compile Include="Nouveau Chargeur\IChargeurUniverselle.cs" />
+    <Compile Include="Nouveau Chargeur\IChargeurUniversel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

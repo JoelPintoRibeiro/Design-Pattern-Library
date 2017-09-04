@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdapterProblem.Nouveau_Chargeur
 {
-    interface IChargeurUniverselle
+    interface IChargeurUniversel
     {
         void Recharge();
     }

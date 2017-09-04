@@ -1,17 +1,17 @@
-﻿using System;
+﻿using AdapterSolution.Nouveau_Chargeur;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterProblem.Chargeurs
+namespace AdapterSolution.Chargeurs
 {
-    public class SamsungChargeur
+    public class SamsungChargeur : IChargeurUniversel
     {
-        public void RechargeIphone()
+        public void Recharge()
         {
-
-            Console.Write("L'iphone recharge");
+            Console.Write("Le Samsung recharge");
         }
     }
 }

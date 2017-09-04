@@ -1,14 +1,14 @@
-﻿using AdapterProblem.Chargeurs;
-using AdapterProblem.Nouveau_Chargeur;
+﻿using AdapterSolution.Chargeurs;
+using AdapterSolution.Nouveau_Chargeur;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterProblem.Adapteurs
+namespace AdapterSolution.Adapteurs
 {
-    public class IphoneAdapteur : IChargeurUniverselle
+    public class IphoneAdapteur : IChargeurUniversel
     {
 
         private readonly IphoneChargeur _iphoneChargeur;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterProblem.Chargeurs
+namespace AdapterSolution.Chargeurs
 {
    public class IphoneChargeur
     {

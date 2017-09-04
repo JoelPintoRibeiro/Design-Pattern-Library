@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterProblem.Nouveau_Chargeur
+namespace AdapterSolution.Nouveau_Chargeur
 {
-    interface IChargeurUniverselle
+    interface IChargeurUniversel
     {
         void Recharge();
     }
